@@ -1,0 +1,24 @@
+.*
+!.gitignore
+build/
+out/
+.gradle/
+.idea/
+*.swp
+*.iml
+*.so
+*.class
+*.setting
+*.ipr
+*.iws
+*.dylib
+*.o
+*.dll
+generator/output/
+generator/bin/
+libsvg/bin/
+# Pipfile would normally be in the repo, but as we are am trying to discourage
+# library usage in the pgmplayer and development service (except websockets)
+Pipfile
+Pipfile.lock
+__pycache__/

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  # Build the full production image
+  app:
+    build: 
+      context: ../
+      target: prod
+    ports:
+      - 127.0.0.1:8080:8080

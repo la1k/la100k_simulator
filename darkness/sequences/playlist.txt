@@ -1,0 +1,13 @@
+AuroraDemo.pgm
+DuoDance.pgm
+Heart.pgm
+LetterColorDance.pgm
+NorskFlaggBitmap.pgm
+OmbreSwipe.pgm
+Snake.pgm
+SphericalRainbow.pgm
+Spinner.pgm
+SpiralBitmap.pgm
+ord.pgm
+NorskFlaggBitmapLargeMovement.pgm
+CW21.pgm

@@ -1,0 +1,30 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.5.21"
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1'
+    implementation 'org.json:json:20210307'
+    implementation 'net.sourceforge.argparse4j:argparse4j:0.9.0'
+}
+
+application {
+    mainClass = "darkness.generator.Main"
+}
+
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/kotlin'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}

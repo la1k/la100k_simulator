@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  # The pydev container will run the backend, recompiling when changes are detected in the source
+  # jsdev frontend will proxy any uknown requests to the backend
+  pydev:
+    build: 
+      context: ../
+      target: pydev
+    user: ${USER}
+    volumes:
+      - ../backend:/app/backend
+      - ../signs:/app/signs
+  # The jsdev server will 
+  jsdev:
+    build:
+      context: ../
+      target: jsdev
+    depends_on: 
+      - pydev
+    user: ${USER}
+    volumes:
+      - ../frontend/public:/app/frontend/public
+      - ../frontend/src:/app/frontend/src
+    ports:
+      - 127.0.0.1:8080:8080
