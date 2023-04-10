@@ -13,6 +13,7 @@ In order to run the code, you need to have `python`, `java` and `docker` install
 ## Quickstart
 websim:
 - You can start the websim from the repository's root directory by running `./websim/docker/start.sh` from your terminal.
+- Then open your preferred web-browser at http://localhost:8080/.
 - Click the sign you want to work with, in this case it will most likely be `LA100K`.
 - Click on the "Development" tab in the tabbed panel on the bottom of the page.
    - The panel will contain the current connection status to the sequence generation software.
