@@ -108,4 +108,3 @@ while True:
     for frame_index, frame in pgm.frames():
         ws.broadcast(frame)
         frc.next_frame()
-
